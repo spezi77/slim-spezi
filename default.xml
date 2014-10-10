@@ -344,7 +344,6 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="SlimRoms/packages_apps_Provision" remote="github" revision="kk4.4" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="SlimRoms/packages_apps_Settings" remote="github" revision="kk4.4" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="SlimRoms/packages_apps_SoundRecorder" remote="github" revision="kk4.4" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -492,18 +491,19 @@
   <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
   
   <!-- Use my forked projects -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="slim-4.4" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="test-slim-cm" />
   <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" remote="spz" revision="slim-4.4" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="slim-4.4" />
   <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="slim-4.4" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="spz" revision="slim-4.4" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="spz" revision="slim-4.4" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="spz" revision="slim-4.4" />  
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spz" revision="slim-4.4" />
   <project path="system/core" name="android_system_core" remote="spz" revision="slim-4.4" />
   
   <!-- CM's New theme engine -->
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-11.0" />  
-  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="cm" revision="cm-11.0" /> 
+  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser"  remote="spz" revision="slim-4.4" />
   <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" remote="cm" revision="cm-11.0" /> 
 
 </manifest>

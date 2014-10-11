@@ -258,7 +258,6 @@
   <project path="external/yaffs2" name="android_external_yaffs2" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="SlimRoms/frameworks_compile_mclinker" remote="github" revision="kk4.4" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -491,6 +490,7 @@
   <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
   
   <!-- Use my forked projects -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="slim-4.4" />
   <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="test-slim-cm" />
   <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" remote="spz" revision="slim-4.4" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="slim-4.4" />

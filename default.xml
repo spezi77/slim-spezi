@@ -235,7 +235,6 @@
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="SlimRoms/android_external_srec" remote="github" revision="kk4.4" />
   <project path="external/srtp" name="platform/external/srtp" />
-  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" revision="cm-11.0" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/stressapptest" name="platform/external/stressapptest" />
@@ -490,6 +489,7 @@
   <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
   
   <!-- Use my forked projects -->
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="spz" revision="slim-4.4" />
   <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="slim-4.4" />
   <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="test-slim-cm" />
   <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" remote="spz" revision="slim-4.4" />

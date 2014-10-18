@@ -369,6 +369,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
+  <project path="packages/services/Telephony" name="SlimRoms/packages_services_Telephony" remote="github" revision="kk4.4" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -498,7 +499,6 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="slim-kk4.4" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="slim-kk4.4" />
   <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="slim-4.4" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="spz" revision="slim-4.4" />  
   <project path="system/core" name="android_system_core" remote="spz" revision="slim-4.4" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="spz" revision="slim-4.4" />
     

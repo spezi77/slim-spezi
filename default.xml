@@ -8,6 +8,13 @@
            fetch="git://github.com/"
            review="https://gerrit.slimroms.net/"/>
 
+  <remote  name="spz"
+           fetch="git://github.com/spezi77" />
+
+  <remote  name="cm"
+           fetch="git://github.com/CyanogenMod"
+           review="review.cyanogenmod.org" />
+
   <default revision="refs/tags/android-4.4.4_r2"
            remote="aosp"
            sync-j="4" />
@@ -17,7 +24,6 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="kk4.4"  />
-  <project path="bionic" name="SlimRoms/android_bionic" remote="github" revision="kk4.4" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="kk4.4" />
@@ -241,7 +247,6 @@
   <project path="external/yaffs2" name="SlimRoms/android_external_yaffs2" remote="github" revision="kk4.4" />
   <project path="external/zlib" name="SlimRoms/android_external_zlib" remote="github" revision="kk4.4" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="SlimRoms/frameworks_av" remote="github" revision="kk4.4-caf" />
   <project path="frameworks/base" name="SlimRoms/frameworks_base" remote="github" revision="kk4.4-caf" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="SlimRoms/frameworks_compile_mclinker" remote="github" revision="kk4.4" />
@@ -249,7 +254,6 @@
   <project path="frameworks/ex" name="SlimRoms/frameworks_ex" remote="github" revision="kk4.4" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="SlimRoms/frameworks_native" remote="github" revision="kk4.4-caf" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" remote="github" revision="kk4.4" />
@@ -262,10 +266,8 @@
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="SlimRoms/frameworks_opt_timezonepicker" remote="github" revision="kk4.4" />
-  <project path="frameworks/opt/telephony" name="SlimRoms/frameworks_opt_telephony" remote="github" revision="kk4.4" />
   <project path="frameworks/opt/vcard" name="SlimRoms/android_frameworks_opt_vcard" remote="github" revision="kk4.4" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" />
-  <project path="frameworks/rs" name="SlimRoms/frameworks_rs" remote="github" revision="kk4.4" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project path="frameworks/volley" name="platform/frameworks/volley" />
@@ -282,7 +284,6 @@
   <project path="hardware/qcom/camera" name="SlimRoms/hardware_qcom_camera" remote="github" revision="kk4.4" />
   <project path="hardware/qcom/display" name="SlimRoms/hardware_qcom_display" remote="github" revision="kk4.4" />
   <project path="hardware/qcom/fm" name="SlimRoms/hardware_qcom_fm" remote="github" revision="kk4.4" />
-  <project path="hardware/qcom/gps" name="SlimRoms/hardware_qcom_gps" remote="github" revision="kk4.4" />
   <project path="hardware/qcom/keymaster" name="SlimRoms/hardware_qcom_keymaster" remote="github" revision="kk4.4" />
   <project path="hardware/qcom/media" name="SlimRoms/hardware_qcom_media" remote="github" revision="kk4.4" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
@@ -290,7 +291,6 @@
   <project path="hardware/qcom/power" name="SlimRoms/hardware_qcom_power" remote="github" revision="kk4.4" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="SlimRoms/hardware_qcom_wlan" remote="github" revision="kk4.4-caf" />
-  <project path="hardware/ril" name="SlimRoms/hardware_ril" remote="github" revision="kk4.4" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="SlimRoms/hardware_ti_omap3" remote="github" revision="kk4.4" />
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="kk4.4" />
@@ -305,8 +305,6 @@
   <project path="packages/apps/Browser" name="SlimRoms/packages_apps_Browser" remote="github" revision="kk4.4" />
   <project path="packages/apps/Calculator" name="SlimRoms/packages_apps_Calculator" remote="github" revision="kk4.4" />
   <project path="packages/apps/Calendar" name="SlimRoms/packages_apps_Calendar" remote="github" revision="kk4.4" />
-  <project path="packages/apps/Camera" name="SlimRoms/packages_apps_Camera" remote="github" revision="kk4.4" />
-  <project path="packages/apps/Camera2" name="SlimRoms/packages_apps_Camera2" remote="github" revision="kk4.4" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="SlimRoms/packages_apps_Contacts" remote="github" revision="kk4.4" />
@@ -315,8 +313,6 @@
   <project path="packages/apps/Dialer" name="SlimRoms/packages_apps_Dialer" remote="github" revision="kk4.4" />
   <project path="packages/apps/Email" name="SlimRoms/packages_apps_Email" remote="github" revision="kk4.4" />
   <project path="packages/apps/Exchange" name="SlimRoms/packages_apps_Exchange" remote="github" revision="kk4.4" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
-  <project path="packages/apps/Gallery2" name="SlimRoms/packages_apps_Gallery2" remote="github" revision="kk4.4" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="SlimRoms/packages_apps_InCallUI" remote="github" revision="kk4.4" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
@@ -341,9 +337,7 @@
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/Torch" name="SlimRoms/packages_apps_Torch" remote="github" revision="kk4.4" />
   <project path="packages/apps/UnifiedEmail" name="SlimRoms/packages_apps_UnifiedEmail" remote="github" revision="kk4.4" />
-  <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="SlimRoms/packages_apps_VoiceDialer" remote="github" revision="kk4.4" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="SlimRoms/packages_inputmethods_LatinIME" remote="github" revision="kk4.4" />
@@ -365,7 +359,6 @@
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
-  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="SlimRoms/packages_wallpapers_PhaseBeam" remote="github" revision="kk4.4" />
@@ -440,9 +433,6 @@
 
   <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="kk4.4-caf" />
 
-  <!-- New Additions for slim -->
-  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="kk4.4" />
-
   <!-- Slim OTA -->
   <project path="packages/apps/SlimCenter" name="SlimRoms/packages_apps_SlimCenter" remote="github" revision="kk4.4" />
 
@@ -458,12 +448,6 @@
   <!--Power Hal -->
   <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="kk4.4" />
 
-  <!-- Slim toolchain gcc and linaro -->
-  <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="kk4.4" />
-
-  <!-- DashClock widget -->
-  <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="kk4.4" />
-
   <!-- Google play services -->
   <project path="external/google/google_play_services" name="SlimRoms/android_external_google_google_play_services" remote="github" revision="kk4.4" />
 
@@ -478,12 +462,53 @@
   <project path="external/qrngd" name="SlimRoms/android_external_qrngd" remote="github" revision="kk4.4" />
 
   <!-- CyanogenMod ffmpeg -->
-  <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="kk4.4" />
-  <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="kk4.4-caf" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" revision="cm-11.0" />
 
   <!-- CyanogenMod Ant -->
   <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" remote="github" revision="cm-11.0" />
   <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" remote="github" revision="cm-11.0" />
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="cm-11.0" />
+  
+    <!-- Device specific projects /-->
+
+  <project path="vendor/slim" name="vendor_slim" remote="spz" revision="kk4.4" />
+
+  <!-- Use devicetrees and kernel forked from Evervolv projects -->
+  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="slim-4.4" />
+  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="slim-4.4" />
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="utopian" />
+  <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="kitkat" /> 
+
+  <!--  Use legacy projects maintained by Evervolv -->
+  <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" remote="github" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" remote="github" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" remote="github" revision="refs/heads/kitkat" />  
+
+   <!-- Required for enabling A2SD scripts -->
+  <project path="external/bash" name="android_external_bash" remote="cm" revision="cm-11.0" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="cm" revision="cm-11.0" />
+
+  <!-- Use htc bravo comp. apps -->
+  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="github" revision="refs/heads/kitkat" />
+  
+  <!-- Switch bionic to Purity for increased performance -->
+  <project path="bionic" name="KitKatPurity/platform_bionic" remote="github" revision="kitkat" />  
+  
+  <!-- Use custom toolchain -->
+  <project path="prebuilt/linux-x86/toolchain/arm-linux-linaro-4.9" name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.9" remote="github" revision="kitkat" />
+  
+  <!-- Use my forked projects -->
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="kk4.4" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="kk4.4" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="slim-4.4" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="spz" revision="slim-4.4" />
+  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="slim-4.4" />
+
+  <!-- Use CM's renderscript to prevent any issues with telephony -->
+  <project path="frameworks/rs" name="android_frameworks_rs" remote="cm" revision="cm-11.0" groups="pdk" />
+  
+  <!-- Remove legacy libril as we use our own ril under devices/htc/bravo 
+  <project path="hardware/ril" name="SlimRoms/hardware_ril" remote="github" revision="kk4.4" />
+  -->
 
 </manifest>

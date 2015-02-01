@@ -507,8 +507,7 @@
   <!-- Use CM's renderscript to prevent any issues with telephony -->
   <project path="frameworks/rs" name="android_frameworks_rs" remote="cm" revision="cm-11.0" groups="pdk" />
   
-  <!-- Remove legacy libril as we use our own ril under devices/htc/bravo 
+  <!-- Use Slim's libril -->
   <project path="hardware/ril" name="SlimRoms/hardware_ril" remote="github" revision="kk4.4" />
-  -->
 
 </manifest>

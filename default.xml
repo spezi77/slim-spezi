@@ -398,7 +398,6 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="SlimRoms/packages_apps_Settings" remote="github" revision="lp5.0-caf" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -574,5 +573,8 @@
   <project path="bionic" name="spezi77/bionic" remote="github" revision="slim-lp" />
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="slim-lp" />    
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="slim-lp" />
+
+  <!-- Use AwesomePlayer instead of NuPlayer -->
+  <project path="packages/apps/Settings" name="spezi77/packages_apps_Settings" remote="github" revision="slim-lp" />
 
 </manifest>
